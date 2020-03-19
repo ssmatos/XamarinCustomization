@@ -1,10 +1,12 @@
-﻿using System;
+﻿using Customization.Services;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using Xamarin.Forms.Internals;
 
 namespace Customization
 {
@@ -16,6 +18,12 @@ namespace Customization
 		public MainPage()
 		{
 			InitializeComponent();
+		}
+
+		void OnGetDeviceOrientationButtonClicked(object sender, EventArgs e)
+		{
+			DeviceOrientation orientation = DependencyService.Get<IOrientation>().GetOrientation();
+			orientationLabel.Text = orientation.ToString();
 		}
 	}
 }

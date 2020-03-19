@@ -1,6 +1,7 @@
-﻿using System;
+﻿using Customization.Services;
+using System;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
+using Xamarin.Forms.Internals;
 
 namespace Customization
 {
