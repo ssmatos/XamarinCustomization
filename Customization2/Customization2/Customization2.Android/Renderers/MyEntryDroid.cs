@@ -24,7 +24,7 @@ namespace Customization2.Droid.Renderers
 			base.OnElementChanged(e);
 
 			if (Control != null)
-				Control.SetBackground(null);
+				Control.SetBackgroundColor(global::Android.Graphics.Color.LightGreen);
 		}
 
 		public MyEntryDroid(Context context) : base(context)

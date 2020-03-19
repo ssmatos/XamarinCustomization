@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:Customization2.Controls"
              mc:Ignorable="d"
              x:Class="Customization2.MainPage">
 
@@ -10,10 +11,13 @@
         <StackLayout>
 
             <Button Text="Get Device Orientation"
-                Clicked="OnGetDeviceOrientationButtonClicked"/>
+                    Clicked="OnGetDeviceOrientationButtonClicked"/>
 
             <Label x:Name="orientationLabel"
-               HorizontalOptions="Center"/>
+                   HorizontalOptions="Center"/>
+
+            <local:MyEntry Placeholder="Hello there."
+                           TextColor="Red"/>
 
         </StackLayout>
     </StackLayout>
